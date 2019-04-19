@@ -16,7 +16,7 @@
   font-family: Arial;
   font-size: 60px;
   font-weight: 400;
-  color: white;
+  color: #fff;
   text-align: left;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
 }
@@ -50,10 +50,17 @@
   background-position: center;
 }
 
-.Shape_9 {
-  background-color: rgb(255, 255, 255);
-  left: 761px;
-  top: 50px;
+.logo {
+  float: right;
+  background-color: #fff;
+/*  left: 761px; */
+/*  top: 50px; */
   width: 469px;
   height: 214px;
+  border: solid 1px red;
+}
+
+.main-header-wrapper {
+  float: left;
+  border: solid 1px red;
 }
