@@ -94,7 +94,6 @@
   margin: 0px 0px 26px 0px;
   font-family: Arial;
   line-height: 1.5;
-
 }
 
 p:nth-child(3) {
@@ -111,10 +110,10 @@ p:nth-child(3) {
 /* Section - disnity */
 .dignity {
   weight: 100%;
-  padding: 0 50px;
+  padding: 50px;
   min-height: 419px;
   background-color: #f5f5f5;
-  border: green 1px solid;
+/*  border: green 1px solid; */
   box-sizing: border-box;
   position: relative;
 }
@@ -138,37 +137,99 @@ p:nth-child(3) {
 
 .dignity-list {
   list-style: none;
-  width: 560px;
+  box-sizing: border-box;
+  width: 590px;
   float: left;
   font-size: 16px;
+  font-family: Arial;
+  color: #333;
   text-align: left;
-  border: 1px solid lime;
-  padding: 0;
+/*  border: 1px solid lime; */
+  padding: 0 21px 0 42px;
   margin: 0;
+  position: relative;
 }
 
 ul:nth-child(3) {
   float: right;
 }
 
-.dignity-list-item {
-  margin: 0 0 40px 0;
+ul.dignity-list:nth-child(2) > li.dignity-list-item:nth-child(3),
+ul.dignity-list:nth-child(3) > li.dignity-list-item:nth-child(3) {
+  margin: 0;
 }
 
-ul:nth-child(2) > li:nth-child(3),
-ul:nth-child(3) > li:nth-child(3) {
-  margin: 0;
+.dignity-list-item {
+  margin: 0 0 40px 0;
 }
 
 .dignity-list-item:before {
   content: "";
   display: block;
-  weight: 32px;
+  width: 32px;
   height: 32px;
+  background-color: #445162;
   position: absolute;
-  top: 800px;
-  left: -40px;
-  background-image: url('..//img/check icon.png');
-  background-size: contain;
+  left: 0;
+  background-image: url('..//img/plus icon.png');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/* Scrinshots */
+.scrinshots {
+  width: 100%;
+  padding: 50px;
+  min-height: 486px;
+  border: green 1px solid;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.scrinshots:after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.scrinshots-title {
+  display: block;
+  text-align: center;
+  font-family: Arial;
+  font-size: 30px;
+  color: #445162;
+  margin: 0 0 35px 0;
+}
+
+.scrinshots-img {
+  display: block;
+  background-color: #445161;
+  float: left;
+}
+
+.scrinshots-title-img {
+  font-family: Arial;
+  font-size: 24px;
+  color: #445161
+}
+
+.scrinshots-text {
+  font-size: 16px;
+  font-family: Arial;
+}
+
+/* .scrinshots-description {
+  float: right;
+}
+
+*/
+
+.scrinshots-wrapper {
+  width: 590px;
+
+}
+
+.scrinshots-description {
+  float: right;
+}
