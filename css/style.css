@@ -329,3 +329,13 @@ ul.dignity-list:nth-child(3) > li.dignity-list-item:nth-child(3) {
   font-size: 14px;
   border: 1px solid black;
 }
+
+.quote-txt {
+  border: 1px solid black;
+  float: right;
+  font-size: 14px;
+}
+
+cite {
+  color: #989898;
+}
