@@ -192,7 +192,7 @@ ul.dignity-list:nth-child(3) > li.dignity-list-item:nth-child(3) {
   content: "";
   display: block;
   width: 100%;
-/*  clear: both; */
+  clear: both;
 }
 
 .scrinshots-title {
@@ -203,24 +203,34 @@ ul.dignity-list:nth-child(3) > li.dignity-list-item:nth-child(3) {
   margin: 0 0 35px 0;
 }
 
-.fig-box1 {
-  width: 40%; /* 590 нужно сделать */
+.main-fig1 {
+  box-sizing: border-box;
+  width: 49%;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
-position: relative;
+  float: left;
+}
+
+.fig-box1 {
+  width: 100%; /* 590 нужно сделать */
+  margin: 0;
+  padding: 0;
+}
+
+.main-fig2 {
+  width: 49%;
+  margin: 0;
+  padding: 0;
+  float: right;
 }
 
 .scrinshots-img {
   background-color: #445161;
   float: left;
   margin-right: 15px;
-/*  width: 200px;
-  height: 150px; */
 }
 
 .figcapt-box {
-  border: solid 1px black;
   margin: 0;
   padding-left: 200px;
 }
@@ -242,34 +252,34 @@ position: relative;
 }
 
 .fig-box2 {
-
-  width: 40%; /* 590 нужно сделать */
+  width: 100%;
   margin: 30px 0 0 0;
   padding: 0;
-  border: 1px solid red;
+  border: 0px solid red;
 
 }
 
 .figcapt-box2 {
-  border: solid 1px black;
   margin: 0;
   padding-left: 200px;
   min-height: 150px;
 }
 
-.fig-box1-2 {
-
-  width: 49%; /* 590 нужно сделать */
+.main-fig2 {
+  width: 50%;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
   float: right;
 }
 
-.fig-box2-2 {
-  width: 46%; /* 590 нужно сделать */
+.fig-box3 {
+  width: 100%;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
-  float: right;
+}
+
+.fig-box4 {
+  width: 100%;
+  margin: 30px 0 0 0;
+  padding: 0;
 }
