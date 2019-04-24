@@ -204,11 +204,11 @@ ul.dignity-list:nth-child(3) > li.dignity-list-item:nth-child(3) {
 }
 
 .fig-box1 {
-  width: 49%; /* 590 нужно сделать */
+  width: 40%; /* 590 нужно сделать */
   margin: 0;
   padding: 0;
   border: 1px solid red;
-  float: left;
+position: relative;
 }
 
 .scrinshots-img {
@@ -242,12 +242,12 @@ ul.dignity-list:nth-child(3) > li.dignity-list-item:nth-child(3) {
 }
 
 .fig-box2 {
-  clear: left;
-  width: 49%; /* 590 нужно сделать */
+
+  width: 40%; /* 590 нужно сделать */
   margin: 30px 0 0 0;
   padding: 0;
   border: 1px solid red;
-  float: left;
+
 }
 
 .figcapt-box2 {
@@ -258,7 +258,7 @@ ul.dignity-list:nth-child(3) > li.dignity-list-item:nth-child(3) {
 }
 
 .fig-box1-2 {
-  clear: right;
+
   width: 49%; /* 590 нужно сделать */
   margin: 0;
   padding: 0;
