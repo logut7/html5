@@ -74,7 +74,7 @@
 /*  border: solid 1px red; */
 }
 
-/* Article 1 */
+/* About */
 .about {
   width: 100%;
   min-height: 394px;
@@ -85,7 +85,7 @@
   box-sizing: border-box;
 }
 
-.article-1:after {
+.about:after {
   content: "";
   display: block;
   width: 100%;
@@ -124,7 +124,7 @@ p:nth-child(3) {
   background-color: #445162;
 }
 
-/* Section - disnity */
+/* Section - dignity */
 .dignity {
   weight: 100%;
   padding: 50px;
@@ -510,7 +510,7 @@ body > div > main > section.buy-wrapper > div:nth-child(2) {
    box-sizing: border-box;
  }
 
- .footer-title {
+.footer-title {
    display: block;
    background-color: #445162;
    color: #fff;
@@ -548,6 +548,8 @@ body > div > main > section.buy-wrapper > div:nth-child(2) {
 .main-form {
   width: 500px;
   padding-left: 200px;
+  margin: 0 40px 0 0;
+  float: left;
 }
 
 .main-form-name,
@@ -572,4 +574,67 @@ body > div > main > section.buy-wrapper > div:nth-child(2) {
 ::-moz-placeholder,
 :-ms-input-placeholder, {
   color:#445162;
+}
+
+.social-box {
+  display: block;
+  min-width: 200px;
+  min-height: 170px;
+  color: #fff;
+/*  border: 1px solid red; */
+  float: left;
+}
+
+.box-item-skype,
+.box-item-icq,
+.box-item-email,
+.box-item-tel {
+  margin: 0 0 30px 0;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 0 0 30px;
+}
+
+.box-item-skype:before,
+.box-item-icq:before,
+.box-item-email:before,
+.box-item-tel:before {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: -3px;
+  left: -1px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.box-item-skype:before {
+  background-image: url('..//img/skype icon.png');
+}
+
+.box-item-icq:before {
+  background-image: url('..//img/icq icon.png');
+}
+
+.box-item-email:before {
+  background-image: url('..//img/email icon.png');
+}
+
+.box-item-tel:before {
+  background-image: url('..//img/phone icon.png');
+}
+
+.social-icons {
+
+}
+
+.main-footer:after {
+ content: "";
+ display: block;
+ width: 100%;
+ clear: both;
 }
