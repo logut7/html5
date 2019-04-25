@@ -24,6 +24,7 @@
   font-family: Arial;
   font-size: 60px;
   font-weight: 400;
+  margin: 0;
   color: #fff;
   text-align: left;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
@@ -74,7 +75,7 @@
 }
 
 /* Article 1 */
-.article-1 {
+.about {
   width: 100%;
   min-height: 394px;
 /*  border: solid 1px red; */
@@ -100,6 +101,7 @@
   display: block;
   font-family: Arial;
   font-size: 30px;
+  font-weight: normal;
   margin: 0px 0px 40px 0px;
 }
 
@@ -148,6 +150,7 @@ p:nth-child(3) {
   color: #445162;
   line-height: 1.2;
   margin: 0 0 38px 0;
+  font-weight: normal;
 }
 
 .dignity-list {
@@ -215,6 +218,7 @@ ul.dignity-list:nth-child(3) > li.dignity-list-item:nth-child(3) {
   font-size: 30px;
   color: #445162;
   margin: 0 0 35px 0;
+  font-weight: normal;
 }
 
 .main-fig1 {
@@ -322,6 +326,7 @@ ul.dignity-list:nth-child(3) > li.dignity-list-item:nth-child(3) {
   font-size: 30px;
   color: #445162;
   margin: 0 0 35px 0;
+  font-weight: normal;
 }
 
 .review-box1 {
@@ -415,6 +420,7 @@ body > div > main > section.review > div:nth-child(3) {
   font-size: 30px;
   color: #445162;
   margin: 0 0 35px 0;
+  font-weight: normal;
 }
 
 .buy-box {
@@ -501,6 +507,7 @@ body > div > main > section.buy-wrapper > div:nth-child(2) {
    min-height: 508px;
    background-color: #445162;
    font-family: Arial;
+   box-sizing: border-box;
  }
 
  .footer-title {
@@ -509,7 +516,6 @@ body > div > main > section.buy-wrapper > div:nth-child(2) {
    color: #fff;
    font-size: 30px;
    box-sizing: border-box;
-   padding: 12px;
    margin-bottom: 30px;
    text-align: center;
 }
@@ -517,10 +523,11 @@ body > div > main > section.buy-wrapper > div:nth-child(2) {
 .btn-send {
   color: #445162;
   background-color: #fff;
-  width: 140px;
+  min-width: 140px;
   box-sizing: border-box;
   min-height: 40px;
-  margin: 0 20px 20px 20px;
+/* margin: 0 20px 0 180px; */
+  margin: 0 auto;
   font-size: 18px;
   font-weight: bold;
   padding: 10px;
@@ -529,4 +536,40 @@ body > div > main > section.buy-wrapper > div:nth-child(2) {
   text-decoration: none;
   border-color: white 0px;
   box-shadow: 0 0 0 1px ;
+  border: 0;
+  display: block;
+}
+
+.btn-send:hover {
+   background: #ebebeb;
+   color: #fff;
+ }
+
+.main-form {
+  width: 500px;
+  padding-left: 200px;
+}
+
+.main-form-name,
+.main-form-email,
+.main-form-massage {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 15px;
+  margin: 0 0 20px 0;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #445162;
+  border: 0;
+}
+
+.main-form-massage {
+  min-height: 170px;
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder, {
+  color:#445162;
 }
