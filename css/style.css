@@ -13,6 +13,13 @@
   background-color: #445162
 }
 
+.main-header:after {
+ content: "";
+ display: block;
+ width: 100%;
+ clear: both;
+}
+
 .main-header-title {
   font-family: Arial;
   font-size: 60px;
@@ -291,6 +298,7 @@ ul.dignity-list:nth-child(3) > li.dignity-list-item:nth-child(3) {
   padding: 0;
 }
 
+/* Review */
 .review {
   width: 100%;
   padding: 50px;
@@ -383,6 +391,7 @@ body > div > main > section.review > div:nth-child(3) {
   margin: 0 0 22px 0;
 }
 
+/* Buy */
 .buy-wrapper {
   width: 100%;
   padding: 50px;
@@ -410,13 +419,18 @@ body > div > main > section.review > div:nth-child(3) {
 
 .buy-box {
   width: 300px;
-  margin: 20px;
+  margin: 20px 20px 0 20px;
   border: 2px solid #445162;
   border-radius: 5px;
   background-color: #445162;
   box-sizing: border-box;
-  float: left;
+  display: inline-block;
+  vertical-align: bottom;
+  align-items: baseline; /* 95 ширина от padding */
+}
 
+body > div > main > section.buy-wrapper > div:nth-child(2) {
+  margin-left: 95px;
 }
 
 .title-item {
@@ -439,16 +453,16 @@ body > div > main > section.review > div:nth-child(3) {
   text-align: center;
 }
 
-.main-price-list {
+.price-list {
   display: block;
   background-color: #445162;
   color: #fff;
   font-size: 14px;
   box-sizing: border-box;
   padding: 20px;
-  padding-left: 40px;
   margin: 0;
   line-height: 2;
+  list-style-position: inside;
 }
 
 .btn {
@@ -466,7 +480,6 @@ body > div > main > section.review > div:nth-child(3) {
   text-decoration: none;
   border-color: white 0px;
   box-shadow: 0 0 0 1px ;
-
 }
 
 .btn:hover {
@@ -479,3 +492,41 @@ body > div > main > section.review > div:nth-child(3) {
    text-decoration: none;
    border: 2px solid gray;
  }
+
+/* Footer */
+ .main-footer {
+   width: 100%;
+   padding: 50px;
+   margin: 0;
+   min-height: 508px;
+   background-color: #445162;
+   font-family: Arial;
+ }
+
+ .footer-title {
+   display: block;
+   background-color: #445162;
+   color: #fff;
+   font-size: 30px;
+   box-sizing: border-box;
+   padding: 12px;
+   margin-bottom: 30px;
+   text-align: center;
+}
+
+.btn-send {
+  color: #445162;
+  background-color: #fff;
+  width: 140px;
+  box-sizing: border-box;
+  min-height: 40px;
+  margin: 0 20px 20px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  border-color: white 0px;
+  box-shadow: 0 0 0 1px ;
+}
