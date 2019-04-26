@@ -156,7 +156,7 @@ p:nth-child(3) {
 .dignity-list {
   list-style: none;
   box-sizing: border-box;
-  width: 590px;
+  width: 50%;
   float: left;
   font-size: 16px;
   font-family: Arial;
@@ -168,16 +168,33 @@ p:nth-child(3) {
   position: relative;
 }
 
-ul:nth-child(3) {
+.dignity-list2 {
+  list-style: none;
+  box-sizing: border-box;
+  width: 50%;
   float: right;
+  font-size: 16px;
+  font-family: Arial;
+  color: #333;
+  text-align: left;
+/*  border: 1px solid lime; */
+  padding: 0 21px 0 42px;
+  margin: 0;
+  position: relative;
+}
+
+.dignity-item-title {
+  min-height: 40px;
+  display: block;
 }
 
 ul.dignity-list:nth-child(2) > li.dignity-list-item:nth-child(3),
-ul.dignity-list:nth-child(3) > li.dignity-list-item:nth-child(3) {
+body > div > main > section.dignity > div > details:nth-child(3) > p {
   margin: 0;
 }
 
-.dignity-list-item {
+.dignity-list-item,
+.dignity-list-item-new {
   margin: 0 0 40px 0;
 }
 
@@ -190,6 +207,41 @@ ul.dignity-list:nth-child(3) > li.dignity-list-item:nth-child(3) {
   position: absolute;
   left: 0;
   background-image: url(..//img/plus_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dignity-item-title {
+  outline: none;
+}
+
+.dignity-item-title::-webkit-details-marker {
+  display: none;
+  position: relative;
+}
+
+.dignity-item-title:before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #445162;
+  background-image: url(..//img/plus_icon.png);
+  position: absolute;
+  left: -1px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+details[open] summary:before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #445162;
+  background-image: url(..//img/minus_icon.png);
+  position: absolute;
+  left: -1px;
   background-repeat: no-repeat;
   background-position: center;
 }
