@@ -537,8 +537,14 @@ body > div > main > section.buy-wrapper > div:nth-child(2) {
 }
 
 .btn-send:hover {
-   background: #ebebeb;
+   background: #445162;
    color: #fff;
+ }
+
+ .btn-send:active {
+   color: #fff;
+   background-color: #ebebeb;
+   border: 0;
  }
 
 .main-form {
@@ -636,4 +642,16 @@ body > div > main > section.buy-wrapper > div:nth-child(2) {
  display: block;
  width: 100%;
  clear: both;
+}
+
+.footer-bottom {
+  width: 100%;
+  background: #fff;
+  text-align: center;
+}
+
+.footer-bottom-txt {
+  display: block;
+  padding: 5px;
+  color: #445162;
 }
