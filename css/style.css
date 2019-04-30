@@ -629,8 +629,14 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', end
   border: 0;
 }
 
+.main-form-name {
+  text-transform: capitalize;
+}
+
 .main-form-massage {
   min-height: 170px;
+  width: 100%;
+  resize: none;
 }
 
 ::-webkit-input-placeholder,
