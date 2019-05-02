@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
@@ -26,8 +26,10 @@
       <p class="about-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
       <p class="about-p">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde per&shy;ferendis nemo debitis dolor.</p>
     </div>
-    <div class="video-item">
-    </div>
+    <video class="video-item" controls muted width="430" height="245">
+      <source src="#">
+      Элемент video не поддерживается вашим браузером.
+    </video>
   </article>
   <section class="dignity">
     <h2 class="dignity-title">Dignity and pluses product</h2>
@@ -36,6 +38,7 @@
       <li class="dignity-list-item">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
       <li class="dignity-list-item">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
     </ul>
+    <!-- В правом списке реализовано выпадающее меню элементом details. В браузерах Microsoft Edge и IE данный элемент не поддерживается. -->
     <div class="dignity-list2">
       <details class="dignity-item">
         <summary class="dignity-item-title">Delectus details</summary>
@@ -163,17 +166,17 @@
   </section>
   <footer class="main-footer">
     <h2 class="footer-title">Contacts</h2>
-    <form class="main-form">
-     <input class="main-form-name" type="text" placeholder="Your name:" required>
-     <input class="main-form-email" type="email" placeholder="Your email:" required>
-     <textarea class="main-form-massage" placeholder="Your massage:" required></textarea>
-     <input class="btn-send" type="submit" value="Send">
-    </form>
+      <form class="main-form" action="#" method="post">
+       <input class="main-form-name" type="text" pattern="^[A-Za-zА-Яа-яЁё\s]+$" placeholder="Your name:" required>
+       <input class="main-form-email" type="email" pattern="\S+([A-z0-9_.-]{1,})@([A-z0-9_.-]{2,}).([A-z]{2,8})" placeholder="Your email:" required>
+       <textarea class="main-form-massage" placeholder="Your massage:" required></textarea>
+       <input class="btn-send" type="submit" value="Send">
+      </form>
     <div class="social-box">
       <span class="box-item-skype">here_your_login_skype</span>
       <span class="box-item-icq">279679659</span>
-      <span class="box-item-email">psdhtmlcss@mail.ru</span>
-      <span class="box-item-tel">80 00 4568 55 55</span>
+      <span class="box-item-email"><a class="box-item-a" href="mailto:psdhtmlcss@mail.ru?subject=Feedback" title="Email to us">psdhtmlcss@mail.ru</a></span>
+      <span class="box-item-tel"><a class="box-item-a" href="tel:800045685555" title="Call to us">80 00 4568 55 55</a></span>
       <a href="#" class="social-icons-twitter" title="Twitter"></a>
       <a href="#" class="social-icons-facebook" title="Facebok"></a>
       <a href="#" class="social-icons-instagram" title="Instagram"></a>

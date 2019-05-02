@@ -122,6 +122,7 @@ p:nth-child(3) {
   width: 430px;
   height: 245px;
   background-color: #445162;
+  outline: none;
 }
 
 /* Section - dignity */
@@ -599,7 +600,7 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', end
 }
 
  .btn-send:active {
-   color: #fff;
+   /* color: #fff; */
    background-color: #eaeef1;
    text-decoration: none;
    border: 0;
@@ -627,6 +628,7 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', end
   font-size: 16px;
   color: #445162;
   border: 0;
+  outline: none;
 }
 
 .main-form-name {
@@ -663,6 +665,18 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', end
   position: relative;
   box-sizing: border-box;
   padding: 0 0 0 30px;
+}
+
+
+.box-item-a,
+.box-item-a:hover,
+.box-item-a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+.box-item-a:active {
+  color: #999;
 }
 
 .box-item-skype:before,
