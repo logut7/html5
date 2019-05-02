@@ -668,14 +668,14 @@ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', end
 }
 
 
-.box-item-a,
-.box-item-a:hover,
-.box-item-a:active {
+.box-item-link,
+.box-item-link:hover,
+.box-item-link:active {
   text-decoration: none;
   color: #fff;
 }
 
-.box-item-a:active {
+.box-item-link:active {
   color: #999;
 }
 
